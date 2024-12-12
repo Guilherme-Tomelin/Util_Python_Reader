@@ -25,11 +25,11 @@ def write_py_files_to_txt(project_dir, ignore_files_list=None):
                         txt_file.write(f"{relative_path}\n")
                         with open(file_path, "r", encoding="utf-8") as py_file:
                             txt_file.write(py_file.read())
-                        txt_file.write("\n" + "-"*80 + "\n")
+                        txt_file.write("\n" + "-"*65 + "\n")
 
     process_directory(project_dir)
 
-project_directory = r"\path\path\path"
+project_directory = r"C:\Users\.."
 ignore_files_list = []
 
 write_py_files_to_txt(project_directory, ignore_files_list)
